@@ -11,7 +11,7 @@ function Home() {
   const [moviesData, setmoviesData] = useState([]);
 
 useEffect(() => {
-   fetch('http://localhost:3000/movies')
+   fetch('http://https://mymoviz-backend-flax-nine.vercel.app//movies')
      .then(response => response.json())
      .then(data => {
       setmoviesData(data.movies)
